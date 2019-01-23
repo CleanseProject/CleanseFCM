@@ -1,12 +1,12 @@
 const firebase = require('firebase-admin');
 const request = require('request');
-const propertiesReader = require('properties-reader');
+const PropertiesReader = require('properties-reader');
 const serviceAccount = require("./serviceAccountKey.json");
 
-const propertiesFile = require('./connection.properties');
-getProperty = (pty) => {return prop.get(pty);};
+//const propertiesFile = require();
+var properties=PropertiesReader('./connection.properties');
 
-var API_KEY = getProperty('api.key');
+var API_KEY = properties.get('api.key');
 // Your Firebase Cloud Messaging Server API key
 
 // Fetch the service account key JSON file contents
@@ -15,7 +15,7 @@ var API_KEY = getProperty('api.key');
 // Initialize the app with a service account, granting admin privileges
 firebase.initializeApp({
     credential: firebase.credential.cert(serviceAccount),
-    databaseURL: getProperty('database.url')
+    databaseURL: properties.get('database.url')
 });
 ref = firebase.database().ref();
 
