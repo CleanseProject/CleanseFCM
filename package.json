@@ -1,0 +1,26 @@
+{
+  "name": "cleansefcm",
+  "version": "1.0.0",
+  "description": "Node.js script for push notifications",
+  "main": "app.js",
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "start": "node app.js",
+    "test": "npm run system-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CleanseProject/CleanseFCM.git"
+  },
+  "author": "Cleanse",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CleanseProject/CleanseFCM/issues"
+  },
+  "homepage": "https://github.com/CleanseProject/CleanseFCM#readme",
+  "dependencies": {
+    "firebase-admin": "^6.5.0",
+    "properties-reader": "0.0.16",
+    "request": "^2.88.0"
+  }
+}
