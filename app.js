@@ -1,12 +1,11 @@
 const firebase = require('firebase-admin');
 const request = require('request');
 const PropertiesReader = require('properties-reader');
+
+const properties = PropertiesReader('./connection.properties');
+
 const serviceAccount = require("./serviceAccountKey.json");
-
-//const propertiesFile = require();
-var properties=PropertiesReader('./connection.properties');
-
-var API_KEY = properties.get('api.key');
+const API_KEY = properties.get('api.key');
 // Your Firebase Cloud Messaging Server API key
 
 // Fetch the service account key JSON file contents
@@ -64,4 +63,3 @@ function sendNotificationToUser(username, message, onSuccess) {
 
 // start listening
 listenForNotificationRequests();
-
