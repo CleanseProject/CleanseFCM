@@ -20,3 +20,7 @@ This file needs the following syntax
 api.key=FIREBASE_WEB_API_KEY
 database.url=YOUR_FIREBASE_DATABASE_URL
 ````
+
+## Deployment
+
+Once the project is already configured for deployment, and Google Cloud SDK is configured on your machine, just run `gcloud app deploy`
