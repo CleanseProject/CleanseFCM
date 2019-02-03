@@ -2,7 +2,7 @@
 
 Node.js Firebase Cloud Messaging Push notification manager ready to deploy to Google Cloud App Engine developed for the [Cleanse Project](https://github.com/CleanseProject/Cleanse).
 
-## Requirement
+## Requirements
 
 The script needs to files on theproject folder in order tu run correctly
 * serviceAccountKey.json
