@@ -21,6 +21,10 @@ api.key=FIREBASE_WEB_API_KEY
 database.url=YOUR_FIREBASE_DATABASE_URL
 ````
 
+## Testing
+
+In order to test your implementation, run `node app.js` (requires prior installation of Node.js)
+
 ## Deployment
 
 Once the project is already configured for deployment, and [Google Cloud SDK is configured on your machine](https://cloud.google.com/sdk/docs/quickstarts), just run `gcloud app deploy` on the project folder
