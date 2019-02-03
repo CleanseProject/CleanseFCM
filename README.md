@@ -4,7 +4,7 @@ Node.js Firebase Cloud Messaging Push notification manager ready to deploy to Go
 
 ## Requirements
 
-The script needs to files on theproject folder in order tu run correctly
+The script needs to files on the project folder in order tu run correctly
 * serviceAccountKey.json
 * connection.properties
 
@@ -23,4 +23,4 @@ database.url=YOUR_FIREBASE_DATABASE_URL
 
 ## Deployment
 
-Once the project is already configured for deployment, and [Google Cloud SDK is configured on your machine](https://cloud.google.com/sdk/docs/quickstarts), just run `gcloud app deploy`
+Once the project is already configured for deployment, and [Google Cloud SDK is configured on your machine](https://cloud.google.com/sdk/docs/quickstarts), just run `gcloud app deploy` on the project folder
