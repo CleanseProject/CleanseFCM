@@ -23,4 +23,4 @@ database.url=YOUR_FIREBASE_DATABASE_URL
 
 ## Deployment
 
-Once the project is already configured for deployment, and Google Cloud SDK is configured on your machine, just run `gcloud app deploy`
+Once the project is already configured for deployment, and [Google Cloud SDK is configured on your machine](https://cloud.google.com/sdk/docs/quickstarts), just run `gcloud app deploy`
