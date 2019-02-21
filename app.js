@@ -19,6 +19,7 @@ function listenForNotificationRequests() {
         var request = requestSnapshot.val();
         sendNotificationToUser(
             request.username,
+            request.title,
             request.message,
             function () {
                 requestSnapshot.ref.remove();
@@ -29,7 +30,7 @@ function listenForNotificationRequests() {
     });
 }
 
-function sendNotificationToUser(username, message, onSuccess) {
+function sendNotificationToUser(username, title, message, onSuccess) {
     request({
         url: 'https://fcm.googleapis.com/fcm/send',
         method: 'POST',
@@ -39,18 +40,17 @@ function sendNotificationToUser(username, message, onSuccess) {
         },
         body: JSON.stringify({
             notification: {
-                title: message
+                title: title,
+                body: message
             },
             to: '/topics/user_' + username
         })
     }, function (error, response, body) {
         if (error) {
             console.error(error);
-        }
-        else if (response.statusCode >= 400) {
+        } else if (response.statusCode >= 400) {
             console.error('HTTP Error: ' + response.statusCode + ' - ' + response.statusMessage);
-        }
-        else {
+        } else {
             onSuccess();
         }
     });
