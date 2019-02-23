@@ -21,6 +21,7 @@ function listenForNotificationRequests() {
             request.username,
             request.title,
             request.message,
+            request.chatuid,
             function () {
                 requestSnapshot.ref.remove();
             }
@@ -30,7 +31,7 @@ function listenForNotificationRequests() {
     });
 }
 
-function sendNotificationToUser(username, title, message, onSuccess) {
+function sendNotificationToUser(username, title, message, chatuid, onSuccess) {
     request({
         url: 'https://fcm.googleapis.com/fcm/send',
         method: 'POST',
@@ -41,7 +42,11 @@ function sendNotificationToUser(username, title, message, onSuccess) {
         body: JSON.stringify({
             notification: {
                 title: title,
-                body: message
+                body: message,
+                click_action: "OPEN_CHAT_ACTIVITY"
+            },
+            data: {
+                chatuid: chatuid
             },
             to: '/topics/user_' + username
         })
