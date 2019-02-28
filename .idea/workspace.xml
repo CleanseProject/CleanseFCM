@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3e1bcda8-26ad-41cb-859a-347f29bfbbce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cleanse-fcm.service" beforeDir="false" afterPath="$PROJECT_DIR$/cleanse-fcm.service" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/cleanse-fcm.service">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+            <state relative-caret-position="153">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -221,7 +222,7 @@
       <workItem from="1550968749440" duration="778000" />
       <workItem from="1551294495173" duration="621000" />
       <workItem from="1551365413009" duration="816000" />
-      <workItem from="1551366454865" duration="342000" />
+      <workItem from="1551366454865" duration="1575000" />
     </task>
     <task id="LOCAL-00001" summary="ignore files">
       <created>1548247479185</created>
@@ -307,11 +308,25 @@
       <option name="project" value="LOCAL" />
       <updated>1550947030106</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Migrate to Compute Engine">
+      <created>1551366826079</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1551366826080</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Migrate to Compute Engine">
+      <created>1551367924541</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1551367924541</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30891000" />
+    <option name="totallyTimeSpent" value="32124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1549" height="837" extended-state="6" />
@@ -352,7 +367,8 @@
     <MESSAGE value="Testing" />
     <MESSAGE value="Add notification title" />
     <MESSAGE value="Send chat id to open activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Send chat id to open activity" />
+    <MESSAGE value="Migrate to Compute Engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="Migrate to Compute Engine" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -427,8 +443,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cleanse-fcm.service">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="45" selection-start-line="8" selection-start-column="45" selection-end-line="8" selection-end-column="45" />
+        <state relative-caret-position="153">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
