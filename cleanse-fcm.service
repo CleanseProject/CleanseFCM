@@ -7,6 +7,6 @@ Group=<Your User Group>
 Restart=always
 KillSignal=SIGQUIT
 WorkingDirectory=/home/<username>/cleanse-fcm/
-ExecStart=/home/<username>/hello_world/app.js
+ExecStart=/home/<username>/cleanse-fcm/app.js
 [Install]
 WantedBy=multi-user.target
