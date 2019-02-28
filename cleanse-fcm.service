@@ -1,0 +1,12 @@
+[Unit]
+Description=Node.js script for push notifications
+[Service]
+PIDFile=/tmp/cleanse-fcm-99.pid
+User=<Your Username>
+Group=<Your User Group>
+Restart=always
+KillSignal=SIGQUIT
+WorkingDirectory=/home/<username>/cleanse-fcm/
+ExecStart=/home/<username>/hello_world/app.js
+[Install]
+WantedBy=multi-user.target
