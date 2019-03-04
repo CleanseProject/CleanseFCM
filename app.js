@@ -1,6 +1,8 @@
 const firebase = require('firebase-admin');
 const request = require('request');
 const PropertiesReader = require('properties-reader');
+const uuidV4 = require('uuid/v4');
+uuidV4();
 
 const properties = PropertiesReader('./connection.properties');
 
@@ -46,7 +48,8 @@ function sendNotificationToUser(username, title, message, chatuid, onSuccess) {
                 click_action: "OPEN_CHAT_ACTIVITY"
             },
             data: {
-                chatuid: chatuid
+                chatuid: chatuid,
+                notificationid: uuidV4()
             },
             to: '/topics/user_' + username
         })
