@@ -4,7 +4,7 @@ Node.js Firebase Cloud Messaging Push notification manager ready to deploy to Go
 
 ## Requirements
 
-The script needs to files on the project folder in order tu run correctly
+The script needs two files on the project folder in order tu run correctly
 * serviceAccountKey.json
 * connection.properties
 
