@@ -20,7 +20,7 @@
   "homepage": "https://github.com/CleanseProject/CleanseFCM#readme",
   "dependencies": {
     "firebase-admin": "^6.5.0",
-    "properties-reader": "0.0.16",
+    "properties-reader": "2.2.0",
     "request": "^2.88.0",
     "uuid": "^3.3.2"
   }
