@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/CleanseProject/CleanseFCM#readme",
   "dependencies": {
-    "firebase-admin": "^6.5.0",
+    "firebase-admin": "^11.4.1",
     "properties-reader": "0.0.16",
     "request": "^2.88.0",
     "uuid": "^3.3.2"
